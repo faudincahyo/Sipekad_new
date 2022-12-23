@@ -1,0 +1,51 @@
+body{
+    background: url('../image/gambar\ 1.png') bottom left no-repeat, url("../image/gambar\ 2.jpg") no-repeat right top;
+    background-size: 300px,500px;  
+}
+*::after{
+    box-sizing: border-box;
+}
+
+
+
+.navbar{
+    background-color: rgb(95, 212, 95);
+    border-bottom: none;
+}
+
+a{
+    position: relative;
+}
+a::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(52, 45, 98);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.login-btn{
+    width: 85%;
+}
+
+.img-1{
+ 
+}
+
+.desc-1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.desc-2{
+    font-size: 18px;
+    
+}
