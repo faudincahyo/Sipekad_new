@@ -25,6 +25,25 @@ class AdminController extends Controller
      return redirect()->route('input.create')->with('success', 'Data Berhasil di Tambahkan');
     }
 
+    public function ktp(){
+        return view('layouts.admin.require');
+    }
+
+    public function sim(){
+        return view('layouts.admin.sim');
+    }
+
+    public function skck(){
+        return view('layouts.admin.skck');
+    }
+
+    public function domisili(){
+        return view('layouts.admin.domisili');
+    }
+
+    public function nikah(){
+        return view('layouts.admin.nikah');
+    }
 
     public function create()
     {
@@ -48,11 +67,6 @@ class AdminController extends Controller
 
     public function update(Request $request, $id){
         $data = Input::find($id);
-
-        if (empty($data)) {
-            # kembalikan ke halaman list product dengan notifikasi with
-            return redirect()->route('product.create')->with('galat', 'product not found');
-        }
 
         $data->update([
             'nama' => $request->nama,

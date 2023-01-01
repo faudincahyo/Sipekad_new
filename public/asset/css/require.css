@@ -1,0 +1,104 @@
+/* body{
+    background: url("../image/circle.png") no-repeat center right ;
+    background-size:400px;  
+} */
+*::after{
+    box-sizing: border-box;
+}
+
+.dropdown-menu{
+    background-color: rgb(178, 121, 231);
+}
+
+.navbar{
+    background-color: rgb(95, 212, 95);
+    border-bottom: none;
+}
+
+a{
+    position: relative;
+}
+.respon-nav::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(52, 45, 98);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.respon-nav:hover::after{
+    width: 100%;
+}
+
+.login-btn{
+    width: 85%;
+}
+
+
+.desc-1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.desc-2{
+    font-size: 18px;
+    
+}
+
+.img{
+    width: 40px;
+}
+
+.img-main{
+    background: url(../image/circle.png) no-repeat center;
+    background-size: 400px;
+}
+
+.img-nikah{
+    height: 600px;
+}
+
+.img-nikah2{
+    background: url(../image/circle.png) no-repeat top right;
+    background-size: 400px;
+}
+.navbar-brand{
+    font-family: "Bauhaus 93";
+    color: rgb(121, 49, 49);
+    font-size: 23px;
+}
+
+@media (max-width: 400px) {
+    .nav-link{
+        margin-left: 3.3rem;
+    }
+    body{
+        background: url('../image/gambar\ 1.png') bottom left no-repeat, url("../image/ktp.jpeg") no-repeat bottom right;
+        background-size: 150px,150px; 
+    }
+
+    .desc-1{
+        width: 350px;
+    }
+
+    .desc-2{
+        font-weight: lighter;
+        font-size: 23px;
+        margin-top: 3rem;
+        width: 350px;
+    }
+
+
+    .img-1{
+        width: 200px;
+    } 
+
+    .img-main{
+        margin-top: 3rem;
+    }
+
+}
