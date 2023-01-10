@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Sipekad Pejagalan') }}</title>
 
     <!-- Scripts -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
@@ -15,11 +15,10 @@
 
     {{-- CSS --}}
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="{{ asset('asset/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/profil.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/table.css') }}">
-
 </head>
-<body style="background-color: rgb(140, 230, 203)">
+<body style="background-color: rgb(152, 222, 231)">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light pe-3 border-0 bg-transparent">
             <a class="navbar-brand" href="#">
@@ -38,23 +37,21 @@
                         <li class="nav-item {{ (request()->is('home')) ? 'active' : '' }}">
                             <a class="nav-link respon-nav"  aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Informasi
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="admin/require">Persyaratan KTP</a></li>
-                              <li><a class="dropdown-item" href="admin/require/sim">Persyaratan SIM</a></li>
-                              <li><a class="dropdown-item" href="admin/skck">Persyaratan SKCK</a></li>
-                              <li><a class="dropdown-item" href="admin/domisili">Surat Pindah Domisili</a></li>
-                              <li><a class="dropdown-item" href="admin/nikah">Surat Rekomendasi Nikah</a></li>
+                              <li><a class="dropdown-item" href="/require">Persyaratan KTP</a></li>
+                              <li><a class="dropdown-item" href="/require/sim">Persyaratan SIM</a></li>
+                              <li><a class="dropdown-item" href="/skck">Persyaratan SKCK</a></li>
+                              <li><a class="dropdown-item" href="/domisili">Surat Pindah Domisili</a></li>
+                              <li><a class="dropdown-item" href="/nikah">Surat Rekomendasi Nikah</a></li>
                             </ul>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link respon-nav" href="{{ route('profil.index') }}">Profil</a>
-                        </li>
-                        <li class="nav-item {{ (request()->is('input/input')) ? 'active' : '' }}">
-                            <a class="nav-link respon-nav" href="{{ route('input.create') }}">Input Dokumen</a>
+                            <a class="nav-link respon-nav" href="{{ route('profiluser.create') }}">Profil</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest

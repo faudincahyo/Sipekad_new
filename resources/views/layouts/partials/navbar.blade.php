@@ -25,16 +25,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto fs-5">
-
-                        <li class="nav-item">
-                            <a class="nav-link"  aria-current="page" href="">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Informasi</a>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Profil</a>
-                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))

@@ -1,4 +1,4 @@
-@extends('layouts.partials.profilnav')
+@extends('layouts.partials.userpartials.profilnav')
 
 @section('content')
 <div class="container">

@@ -43,15 +43,15 @@
                                 Informasi
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="require">Persyaratan KTP</a></li>
-                              <li><a class="dropdown-item" href="require/sim">Persyaratan SIM</a></li>
-                              <li><a class="dropdown-item" href="/skck">Persyaratan SKCK</a></li>
-                              <li><a class="dropdown-item" href="/domisili">Surat Pindah Domisili</a></li>
-                              <li><a class="dropdown-item" href="/nikah">Surat Rekomendasi Nikah</a></li>
+                              <li><a class="dropdown-item" href="admin/require">Persyaratan KTP</a></li>
+                              <li><a class="dropdown-item" href="admin/require/sim">Persyaratan SIM</a></li>
+                              <li><a class="dropdown-item" href="admin/skck">Persyaratan SKCK</a></li>
+                              <li><a class="dropdown-item" href="admin/domisili">Surat Pindah Domisili</a></li>
+                              <li><a class="dropdown-item" href="admin/nikah">Surat Rekomendasi Nikah</a></li>
                             </ul>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link respon-nav" href="{{ route('profil.create') }}">Profil</a>
+                            <a class="nav-link respon-nav" href="{{ route('profil.index') }}">Profil</a>
                         </li>
                         <li class="nav-item {{ (request()->is('input/input')) ? 'active' : '' }}">
                             <a class="nav-link respon-nav" href="{{ route('input.create') }}">Input Dokumen</a>

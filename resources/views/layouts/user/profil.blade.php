@@ -1,4 +1,4 @@
-@extends('layouts.partials.profilnav');
+@extends('layouts.partials.userpartials.profilnav');
 
 @section('content')
     <div class="container">
@@ -17,7 +17,6 @@
                 @endif
                 <form class="form" enctype="multipart/form-data">
                     @foreach ($data as $item)
-                        
                         <div class="form-group position-relative mb-4 w-100 mt-2">
                             <h3>KELURAHAN</h3>
                             <textarea disabled type="text" name="alamat_kel" class="form-control form-control-xl border-0 fw-bold"
@@ -34,7 +33,6 @@
                                 class="form-control form-control-xl border-0 fw-bold"
                                 style="background-color:rgb(239, 126, 126)">
                         </div>
-
                     @endforeach
                 </form>
                 <a href="{{ route('profil.edit', $item->id) }}" class="ms-auto mb-2">

@@ -35,22 +35,22 @@
                     <ul class="navbar-nav ms-auto fs-5 fw-semibold">
 
                         <li class="nav-item {{ (request()->is('home')) ? 'active' : '' }}">
-                            <a class="nav-link"  aria-current="page" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link"  aria-current="page" href="{{ route('dashboard') }}">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Informasi
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="require">Persyaratan KTP</a></li>
-                              <li><a class="dropdown-item" href="require/sim">Persyaratan SIM</a></li>
-                              <li><a class="dropdown-item" href="/skck">Persyaratan SKCK</a></li>
-                              <li><a class="dropdown-item" href="/domisili">Surat Pindah Domisili</a></li>
-                              <li><a class="dropdown-item" href="/nikah">Surat Rekomendasi Nikah</a></li>
+                                <li><a class="dropdown-item" href="/admin/require">Persyaratan KTP</a></li>
+                                <li><a class="dropdown-item" href="/admin/require/sim">Persyaratan SIM</a></li>
+                                <li><a class="dropdown-item" href="/admin/skck">Persyaratan SKCK</a></li>
+                                <li><a class="dropdown-item" href="/admin/domisili">Surat Pindah Domisili</a></li>
+                                <li><a class="dropdown-item" href="/admin/nikah">Surat Rekomendasi Nikah</a></li>
                             </ul>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profil</a>
+                            <a class="nav-link" href="{{ route('profil.index') }}">Profil</a>
                         </li>
                         <li class="nav-item {{ (request()->is('input/input')) ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('input.create') }}">Input Dokumen</a>
