@@ -13,7 +13,11 @@ HOW TO INSTALL :
 11. Setelah selesai download NPM dengan menggunakan perintah "npm install"
 12. Kemudian jalankan perintah "npm run dev" tunggu hingga berjalan setelah itu matikan menggunakan ctrl+c
 13. Terakhir jalankan perintah "npm run build" dan SELESAI
-
-
+14. Lakukan Registrasi dengan akun pertama yaitu admin
+15. setelah berhasil Registrasi, selanjutnya buka phpmyadmin kemudian pilih tabel "users" lalu klik
+16. Ubah role akun yang pertama kali di registrasi menjadi role "Admin"
+18. selanjutnya ke tabel pengantars lakukan input data dengan memasukkan file "pengantar.jpg" di kolom "pengantar_doc" kemudian isi id dengan "1"
+19. terakhir ke tabel domisilis lakukan input data dengan memasukkan file "domisili.jpg" di kolom "domisi_doc" kemudian isi id dengan "1"
+20. Selesai
 
 
