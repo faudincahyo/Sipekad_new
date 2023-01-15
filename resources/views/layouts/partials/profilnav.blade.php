@@ -35,7 +35,7 @@
                     <ul class="navbar-nav ms-auto fs-5 fw-semibold">
 
                         <li class="nav-item {{ (request()->is('home')) ? 'active' : '' }}">
-                            <a class="nav-link respon-nav"  aria-current="page" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link respon-nav"  aria-current="page" href="{{ route('dashboard') }}">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -43,11 +43,11 @@
                                 Informasi
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="admin/require">Persyaratan KTP</a></li>
-                              <li><a class="dropdown-item" href="admin/require/sim">Persyaratan SIM</a></li>
-                              <li><a class="dropdown-item" href="admin/skck">Persyaratan SKCK</a></li>
-                              <li><a class="dropdown-item" href="admin/domisili">Surat Pindah Domisili</a></li>
-                              <li><a class="dropdown-item" href="admin/nikah">Surat Rekomendasi Nikah</a></li>
+                                <li><a class="dropdown-item" href="/admin/require">Persyaratan KTP</a></li>
+                              <li><a class="dropdown-item" href="/admin/require/sim">Persyaratan SIM</a></li>
+                              <li><a class="dropdown-item" href="/admin/skck">Persyaratan SKCK</a></li>
+                              <li><a class="dropdown-item" href="/admin/domisili">Surat Pindah Domisili</a></li>
+                              <li><a class="dropdown-item" href="/admin/nikah">Surat Rekomendasi Nikah</a></li>
                             </ul>
                         </li> 
                         <li class="nav-item">

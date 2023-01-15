@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profils', function (Blueprint $table) {
+        Schema::create('pengantars', function (Blueprint $table) {
             $table->id();
-            $table->string('alamat_kel');
-            $table->string('telp_kel');
-            $table->string('alamat_rt');
-            $table->string('telp_rt');
-
+            $table->string('pengantar_doc');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profils');
+        Schema::dropIfExists('pengantars');
     }
 };

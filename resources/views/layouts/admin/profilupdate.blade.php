@@ -19,6 +19,10 @@
                     @csrf @method("PATCH")
 
                     <h3>Edit ALamat & Nomor Telepon Kelurahan</h3>
+                    <div class="form-group position-relative mb-4 w-100">
+                        <label class="fs-5">Nama</label>
+                        <input type="text" name="name" class="form-control form-control-xl" value="{{ $data->name }}">
+                    </div>
 
                     <div class="form-group position-relative mb-4 w-100">
                         <label class="fs-5">Alamat Kelurahan</label>
@@ -26,7 +30,7 @@
                     </div>
                     <div class="form-group position-relative mb-4 w-100">
                         <label class="fs-5">Nomor Telepon</label>
-                        <input type="text" name="telp_kel" class="form-control form-control-xl" value="{{ $data->telp_kel }}">
+                        <input type="text" name="no_kel" class="form-control form-control-xl" value="{{ $data->no_kel }}">
                     </div>
 
                     <h3>Edit ALamat & Nomor Telepon RT</h3>
@@ -36,7 +40,7 @@
                     </div>
                     <div class="form-group position-relative mb-4 w-100">
                         <label class="fs-5">Nomor Telepon</label>
-                        <input type="text" name="telp_rt" class="form-control form-control-xl" value="{{ $data->telp_rt }}">
+                        <input type="text" name="no_rt" class="form-control form-control-xl" value="{{ $data->no_rt }}">
                     </div>
 
                     <button class="btn btn-outline-success w-50 fw-bold text-dark">Edit Profil</button>

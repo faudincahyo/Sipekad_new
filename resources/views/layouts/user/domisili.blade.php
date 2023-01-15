@@ -6,10 +6,21 @@
             {{-- Welcome --}}
             <div class="col-6 ms-5">
                 <img class="w-75" src="{{ asset('asset/image/domisili.jpeg') }}" alt="">
+                <div class="row mt-5">
+                    <div class="col">
+                        <h4>Silahkan klik link dibawah ini untuk mengunduh surat pengantar</h4>
+                        <a class="fs-4" href="{{ route('download') }}">Unduh Surat Pengantar</a>
+                    </div>
+                    <div class="col">
+                        <h4>Silahkan klik link dibawah ini untuk mengunduh surat domisili</h4>
+                        <a class="fs-4" href="{{ route('domisiliview') }}">Unduh Surat Domisili</a>
+                    </div>
+                </div>
             </div>
 
             <div class="col-md-4 ms-auto order-2 img-main">
-                <img class="img-1" src="{{ asset('asset/image/undraw_information_tab_re_f0w3.svg') }}" alt="" style="width: 450px">
+                <img class="img-1" src="{{ asset('asset/image/undraw_information_tab_re_f0w3.svg') }}" alt=""
+                    style="width: 450px">
             </div>
         </div>
     </div>

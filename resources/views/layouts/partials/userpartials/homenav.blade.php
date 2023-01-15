@@ -51,7 +51,7 @@
                             </ul>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link respon-nav" href="{{ route('profiluser.create') }}">Profil</a>
+                            <a class="nav-link respon-nav" href="{{ route('profiluser.index') }}">Profil</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest

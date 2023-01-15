@@ -35,7 +35,7 @@
                     <ul class="navbar-nav ms-auto fs-5 fw-semibold">
 
                         <li class="nav-item {{ (request()->is('home')) ? 'active' : '' }}">
-                            <a class="nav-link"  aria-current="page" href="{{ route('home') }}">Home</a>
+                            <a class="nav-link"  aria-current="page" href="{{ route('dashboard') }}">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,12 +45,12 @@
                               <li><a class="dropdown-item" href="require">Persyaratan KTP</a></li>
                               <li><a class="dropdown-item" href="require/sim">Persyaratan SIM</a></li>
                               <li><a class="dropdown-item" href="/skck">Persyaratan SKCK</a></li>
-                              <li><a class="dropdown-item" href="domisili">Surat Pindah Domisili</a></li>
-                              <li><a class="dropdown-item" href="nikah">Surat Rekomendasi Nikah</a></li>
+                              <li><a class="dropdown-item" href="/domisili">Surat Pindah Domisili</a></li>
+                              <li><a class="dropdown-item" href="/nikah">Surat Rekomendasi Nikah</a></li>
                             </ul>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('profiluser.create') }}">Profil</a>
+                            <a class="nav-link" href="{{ route('profiluser.index') }}">Profil</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest

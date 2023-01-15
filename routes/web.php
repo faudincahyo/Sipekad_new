@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfilUserController;
 use App\Models\Profil;
@@ -29,8 +30,16 @@ Route::get('/domisili', [App\Http\Controllers\UserController::class, 'domisili']
 
 Route::get('/nikah', [App\Http\Controllers\UserController::class, 'nikah']);
 
+//Route Profil User
 Route::resource('profiluser', App\Http\Controllers\ProfilUserController::class);
 
+// Route surat pengantar
+Route::get('download', [App\Http\Controllers\FileController::class, 'index'])->name('download');
+Route::get('download/cetakpdf', [App\Http\Controllers\FileController::class, 'cetakpdf'])->name('cetakpdf');
+//Route Surat Domisili
+
+Route::get('domisilicetak', [App\Http\Controllers\FileController::class, 'domisilipdf'])->name('domisiliview');
+Route::get('domisilicetak/domisilipdf', [App\Http\Controllers\FileController::class, 'cetakdomisili'])->name('cetakdomisili');
 
 
 Auth::routes();

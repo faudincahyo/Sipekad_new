@@ -23,6 +23,10 @@ class User extends Authenticatable
         'username',
         'email',
         'password',
+        'alamat_kel',
+        'no_kel',
+        'alamat_rt',
+        'no_rt',
     ];
 
     /**
@@ -43,4 +47,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function profiluser()
+    {
+        return $this->hasMany(ProfilUser::class, 'user_id');
+    }
 }
